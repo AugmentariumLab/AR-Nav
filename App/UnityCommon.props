@@ -1,0 +1,9 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <UnityWSASolutionName>NewNav</UnityWSASolutionName>
+        <UnityWSASolutionDir>C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\</UnityWSASolutionDir>
+        <UnityProjectDir>C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\</UnityProjectDir>
+        <UnityWSAPlayerDir>C:\Program Files\Unity\Hub\Editor\2017.4.8f1\Editor\Data\PlaybackEngines\MetroSupport\</UnityWSAPlayerDir>
+        <UnityWSAToolsDir>$(UnityWSASolutionDir)Unity\Tools\</UnityWSAToolsDir>
+    </PropertyGroup>
+</Project>

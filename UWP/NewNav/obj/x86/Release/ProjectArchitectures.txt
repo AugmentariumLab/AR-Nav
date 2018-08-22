@@ -1,0 +1,2 @@
+C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\UWP\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj;x86
+C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\UWP\NewNav\NewNav.csproj;x86

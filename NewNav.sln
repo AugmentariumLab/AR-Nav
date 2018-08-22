@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewNav", "NewNav.csproj", "{BA6A123B-873E-5D41-86B9-B95958189554}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewNav.Editor", "NewNav.Editor.csproj", "{55B061D0-6FE1-CD89-0BA5-027C73DACD48}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA6A123B-873E-5D41-86B9-B95958189554}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA6A123B-873E-5D41-86B9-B95958189554}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA6A123B-873E-5D41-86B9-B95958189554}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA6A123B-873E-5D41-86B9-B95958189554}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55B061D0-6FE1-CD89-0BA5-027C73DACD48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55B061D0-6FE1-CD89-0BA5-027C73DACD48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55B061D0-6FE1-CD89-0BA5-027C73DACD48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55B061D0-6FE1-CD89-0BA5-027C73DACD48}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
