@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/MyNav.unity
+- path: Assets/Scenes/MovingTarget.unity
   isLoaded: 1
   isActive: 1
