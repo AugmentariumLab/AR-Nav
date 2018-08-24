@@ -363,7 +363,7 @@
 
   <ItemGroup>
     <ProjectReference Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj">
-      <Project>{1b45705f-c0b8-4681-b965-688585a9463f}</Project>
+      <Project>{3e32d0b0-03e2-4bec-9f6d-e248bc12a385}</Project>
       <Name>Assembly-CSharp</Name>
       <Private>False</Private>
     </ProjectReference>

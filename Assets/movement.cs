@@ -7,7 +7,7 @@ public class movement : MonoBehaviour {
     GameObject rot;
     public bool targeted = true;
     public static Navigator nav;
-
+    public GameObject template;
     public Material closestMaterial = null;
 
     // Use this for initialization
@@ -16,7 +16,7 @@ public class movement : MonoBehaviour {
         nav = new Navigator();
         
 
-        nav.Setup(closestMaterial);
+        nav.Setup(closestMaterial, template);
         
     }
 	

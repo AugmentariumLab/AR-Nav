@@ -8,7 +8,7 @@
 NewNav.sln: modified
 GeneratedProjects\UWP\Assembly-CSharp\project.json: 1D02BC64BAC0D041019673A1C4C51737
 NewNav\App.cs: CCDFDE10527385912559717CD29E8DC4
-NewNav\NewNav.csproj: 08538AA5D14EC59BEE5CC0E1F536D986
+NewNav\NewNav.csproj: EAC4C7E09774D83595553BA40EFE5C15
 NewNav\NewNav.csproj.user: modified
 NewNav\NewNav.sln: modified
 NewNav\Package.appxmanifest: 511FA5E54310EC4D14F4D2B20004FB86

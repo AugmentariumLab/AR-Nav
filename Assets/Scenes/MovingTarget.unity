@@ -631,7 +631,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0.05
   targeted: 1
-  closestMaterial: {fileID: 0}
+  template: {fileID: 1235218769782022, guid: 32fb168ce0b7e0345a3e41b03f430066, type: 2}
+  closestMaterial: {fileID: 2100000, guid: 0c57af9b139968e4683f50d7a8bb15f0, type: 2}
 --- !u!1001 &442697966
 Prefab:
   m_ObjectHideFlags: 0

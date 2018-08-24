@@ -241,7 +241,7 @@ d3a0b520109552cd3ebbb5a8d5e7dae1 Assembly-CSharp.dll:HoloToolkit.Unity.UX.Duplic
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp-Editor.dll:HoloToolkit.Unity.SpatialMapping.SurfaceMeshesToPlanesEditor
 b48597bac756ea53cecb08fc53de8b9f Assembly-CSharp.dll:HoloToolkit.Unity.Buttons.ButtonTextProfile
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:HoloToolkit.Unity.InputModule.SetGlobalListener
-795a98b074d5abf127eda891b1d7fd94 Assembly-CSharp.dll:.movement
+3f5b31f7297de3d99087aac2d0b888f2 Assembly-CSharp.dll:.movement
 ea52563a1cf29dee5fa63282e48cd038 Assembly-CSharp.dll:HoloToolkit.Unity.InputModule.MeshCursor
 5bbcdf115068cbc700263860c5b9348b Assembly-CSharp.dll:HoloToolkit.Unity.SolverMomentumizer
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp-Editor.dll:HoloToolkit.Unity.UX.SolverInBetweenEditor

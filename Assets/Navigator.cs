@@ -2,12 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
 public class Navigator
 {
     public struct Node
     {
         public GameObject obj;
         public Dictionary<Node, float> adjacencies;
+        
 
         public Node(GameObject o, Dictionary<Node, float> a)
         {
@@ -42,15 +45,19 @@ public class Navigator
     private GameObject[] anchors;
     public Material originalMaterial = null;
     public Material closestMaterial = null;
-
+    private Queue<GameObject> drawnpath;
+    public GameObject path_template = null;
+    public float defaultWeight = 0;
     public Navigator()
     {
 
     }
 
-    public void Setup(Material material) {
+    public void Setup(Material material, GameObject template) {
         //get all anchors
+        drawnpath = new Queue<GameObject>();
         closestMaterial = material;
+        path_template = template;
         anchors = GameObject.FindGameObjectsWithTag("Anchor");
         originalMaterial = anchors[0].GetComponent<Renderer>().material;
         //create a list of nodes to access the graph in constant time
@@ -91,13 +98,13 @@ public class Navigator
         nodes[26].adjacencies = makeDict(new Node[] { nodes[24], nodes[27] });
         nodes[27].adjacencies = makeDict(new Node[] { nodes[26], nodes[25] });
         nodes[28].adjacencies = makeDict(new Node[] { nodes[9], nodes[29] });
-        nodes[29].adjacencies = makeDict(new Node[] { nodes[28], nodes[30] });
-        nodes[30].adjacencies = makeDict(new Node[] { nodes[29], nodes[31] });
-        nodes[31].adjacencies = makeDict(new Node[] { nodes[30], nodes[25] });
+        nodes[29].adjacencies = makeDict(new Node[] { nodes[30], nodes[31] });
+        nodes[30].adjacencies = makeDict(new Node[] { nodes[29], nodes[28] });
+        nodes[31].adjacencies = makeDict(new Node[] { nodes[29], nodes[25] });
 
 
         //calculate the weights for the edges
-        //calculateWeights(nodes);
+        calculateWeights(nodes);
     }
 
     public GameObject getClosest(Vector3 pos)
@@ -144,7 +151,7 @@ public class Navigator
         return adj;
     }
 
-    public GameObject[] Dijkstras(Node[] graph, int source, int dest)
+    public Node[] Dijkstras(Node[] graph, int source, int dest)
     {
 
 
@@ -183,7 +190,7 @@ public class Navigator
             S.Add(V);
             if (temp > 50)
             {
-                return new GameObject[] { };
+                return new Node[] { };
             }
             temp++;
 
@@ -201,7 +208,7 @@ public class Navigator
             Q.Remove(V);
         }
 
-        List<GameObject> ret = new List<GameObject>();
+        List<Node> ret = new List<Node>();
         Node last = graph[dest];
         int j = 0;
 
@@ -209,10 +216,10 @@ public class Navigator
         while (Parent[last.obj.name].obj != null)
         {
             j++;
-            ret.Add(((Node)last).obj);
+            ret.Add(((Node)last));
             last = Parent[last.obj.name];
         }
-        ret.Add(graph[source].obj);
+        ret.Add(graph[source]);
 
         return ret.ToArray();
 
@@ -236,10 +243,13 @@ public class Navigator
    
     private void calculateWeights(Node[] nodes)
     {
-        foreach (var node in nodes)
+        for (int i = 0; i < nodes.Length; i++)
         {
-            foreach (Node neighbor in node.adjacencies.Keys)
+            Node node = nodes[i];
+            List<Node> keys = new List<Node>(node.adjacencies.Keys);
+            for (int j = 0; j < node.adjacencies.Count; j++)
             {
+                Node neighbor = keys[j];
                 node.adjacencies[neighbor] = Vector3.Distance(node.obj.transform.position, neighbor.obj.transform.position);
             }
         }
@@ -260,17 +270,84 @@ public class Navigator
         }
     }
 
+    public float ABS(float x)
+    {
+        if (x < 0)
+        {
+            return -x;
+        }
+        else
+        {
+            return x;
+        }
+    }
+
     public void ProcessCommand(int sphere)
     {
-        GameObject[] path = Dijkstras(nodes, getClosestInt(Camera.main.transform.position), sphere);
-
+        if(drawnpath.Count != 0)
+        {
+            foreach(var junct in drawnpath)
+            {
+                Object.Destroy(junct);
+            }
+        }
+        Node[] path = Dijkstras(nodes, getClosestInt(Camera.main.transform.position), sphere);
+        float weight = GetPathWeight(path);
+        if(defaultWeight == 0)
+        {
+            defaultWeight = weight;
+        }
         for (int i = 0; i < path.Length; i++)
         {
+            //Recolor(path[i].obj);
+            if (i < path.Length - 1)
+            {
+                
+                GameObject juncture = NewJuncture(i, path[i].obj.transform.position, path[i + 1].obj.transform.position, weight);
 
-            Recolor(path[i]);
+                drawnpath.Enqueue(juncture);
+            }
         }
+        Recolor(path[0].obj);
+        //Recolor(getClosest(Camera.main.transform.position));
+    }
 
-        Recolor(getClosest(Camera.main.transform.position));
+    public float GetPathWeight(Node[] path)
+    {
+        float weight = 0;
+        Node? lastNode = null;
+        GameObject targ = GameObject.FindGameObjectWithTag("Rotating");
+        foreach (Node obj in path)
+        {
+            if (lastNode == null)
+            {
+                lastNode = obj;
+                continue;
+            }
+            else
+            {
+                foreach(Node adj in (((Node)lastNode).adjacencies.Keys)){
+                    if(adj.obj.name == obj.obj.name)
+                    {
+                        weight += ((Node)lastNode).adjacencies[adj];
+                    }
+                }
+                lastNode = obj;
+            }
+        }
+        float dist1 = Vector3.Distance(path[1].obj.transform.position, targ.transform.position);
+        float dist2 = Vector2.Distance(path[1].obj.transform.position, path[0].obj.transform.position);
+        if (dist2 < dist1)
+        {
+            weight += Vector3.Distance(path[0].obj.transform.position, targ.transform.position);
+        }
+        else
+        {
+            weight -= Vector3.Distance(path[0].obj.transform.position, targ.transform.position);
+        }
+        
+        //weight -= Vector3.Distance(path[0].obj.transform.position, Camera.main.transform.position);
+        return weight;
     }
 
     public void Target()
@@ -279,5 +356,24 @@ public class Navigator
         GameObject targ = GameObject.FindGameObjectWithTag("Rotating");
         int closestToTargetInt = getClosestInt(targ.transform.position);
         ProcessCommand(closestToTargetInt);
+    }
+
+    public GameObject NewJuncture(int name, Vector3 anchor1, Vector3 anchor2, float weight)
+    {
+        GameObject juncture = new GameObject("Juncture " + name.ToString());
+        MeshFilter meshFilter = juncture.AddComponent<MeshFilter>();
+        juncture.AddComponent<MeshRenderer>();
+        meshFilter.sharedMesh = path_template.GetComponent<MeshFilter>().sharedMesh;
+        Material mat = juncture.GetComponent<Renderer>().material;
+        mat.color = Color.blue;
+        Vector3 newPos = new Vector3((anchor2.x + anchor1.x) / 2.0f, anchor1.y - 0.5f, (anchor2.z + anchor1.z) / 2.0f);
+        juncture.transform.position = newPos;
+
+        Vector3 scaling = new Vector3(Mathf.Sqrt(Mathf.Pow(anchor2.x - anchor1.x, 2) + Mathf.Pow(anchor2.z - anchor1.z, 2)), .01f, .1f * Mathf.Pow(weight/defaultWeight, 1));
+        juncture.transform.localScale = scaling;
+
+        Vector3 rot = new Vector3(0, 90 + Mathf.Rad2Deg * Mathf.Atan2(anchor1.x - newPos.x, anchor1.z - newPos.z), 0);
+        juncture.transform.Rotate(rot);
+        return juncture;
     }
 }
