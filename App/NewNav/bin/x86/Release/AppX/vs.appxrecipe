@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\bin\x86\Release\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-08-24T19:02:58.657</Modified>
+      <Modified>2018-09-10T14:43:06.237</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\bin\x86\Release\NewNav.exe">
       <PackagePath>entrypoint\NewNav.exe</PackagePath>
-      <Modified>2018-08-24T19:02:37.622</Modified>
+      <Modified>2018-09-10T14:42:35.107</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\.nuget\packages\microsoft.applicationinsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -501,7 +501,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\Resource.res">
       <PackagePath>Resource.res</PackagePath>
-      <Modified>2018-08-24T19:01:12.377</Modified>
+      <Modified>2018-09-10T14:31:37.468</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
@@ -559,15 +559,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\Data\boot.config">
       <PackagePath>Data\boot.config</PackagePath>
-      <Modified>2018-08-24T18:59:42.591</Modified>
+      <Modified>2018-09-10T14:30:16.422</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\Data\globalgamemanagers">
       <PackagePath>Data\globalgamemanagers</PackagePath>
-      <Modified>2018-08-24T18:59:40.368</Modified>
+      <Modified>2018-09-10T14:30:07.201</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\Data\level0">
       <PackagePath>Data\level0</PackagePath>
-      <Modified>2018-08-24T18:59:37.116</Modified>
+      <Modified>2018-09-10T14:30:04.770</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\Data\Resources\unity default resources">
       <PackagePath>Data\Resources\unity default resources</PackagePath>
@@ -575,31 +575,31 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\Data\Resources\unity_builtin_extra">
       <PackagePath>Data\Resources\unity_builtin_extra</PackagePath>
-      <Modified>2018-08-24T18:59:42.580</Modified>
+      <Modified>2018-09-10T14:30:16.417</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\Data\globalgamemanagers.assets">
       <PackagePath>Data\globalgamemanagers.assets</PackagePath>
-      <Modified>2018-08-24T18:59:40.645</Modified>
+      <Modified>2018-09-10T14:30:08.224</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\Data\sharedassets0.assets">
       <PackagePath>Data\sharedassets0.assets</PackagePath>
-      <Modified>2018-08-24T18:59:41.896</Modified>
+      <Modified>2018-09-10T14:30:15.548</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\Data\level0.resS">
       <PackagePath>Data\level0.resS</PackagePath>
-      <Modified>2018-08-24T18:59:37.111</Modified>
+      <Modified>2018-09-10T14:30:04.766</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\Data\sharedassets0.assets.resS">
       <PackagePath>Data\sharedassets0.assets.resS</PackagePath>
-      <Modified>2018-08-24T18:59:41.872</Modified>
+      <Modified>2018-09-10T14:30:15.529</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\Data\managedAssemblies.txt">
       <PackagePath>Data\managedAssemblies.txt</PackagePath>
-      <Modified>2018-08-24T19:01:12.286</Modified>
+      <Modified>2018-09-10T14:31:37.365</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\Data\nativePlugins.txt">
       <PackagePath>Data\nativePlugins.txt</PackagePath>
-      <Modified>2018-08-24T19:01:12.289</Modified>
+      <Modified>2018-09-10T14:31:37.367</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17134.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -608,235 +608,235 @@
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\bin\x86\Release\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-08-24T19:02:38.672</Modified>
+      <Modified>2018-09-10T14:42:36.521</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\UnityEngine.TextRenderingModule.dll">
       <PackagePath>UnityEngine.TextRenderingModule.dll</PackagePath>
-      <Modified>2018-08-24T19:02:52.038</Modified>
+      <Modified>2018-09-10T14:42:52.093</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\UnityEngine.TerrainPhysicsModule.dll">
       <PackagePath>UnityEngine.TerrainPhysicsModule.dll</PackagePath>
-      <Modified>2018-08-24T19:02:52.045</Modified>
+      <Modified>2018-09-10T14:42:52.239</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\UnityEngine.TerrainModule.dll">
       <PackagePath>UnityEngine.TerrainModule.dll</PackagePath>
-      <Modified>2018-08-24T19:02:52.059</Modified>
+      <Modified>2018-09-10T14:42:52.394</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\UnityEngine.TilemapModule.dll">
       <PackagePath>UnityEngine.TilemapModule.dll</PackagePath>
-      <Modified>2018-08-24T19:02:52.069</Modified>
+      <Modified>2018-09-10T14:42:52.540</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\UnityEngine.UIElementsModule.dll">
       <PackagePath>UnityEngine.UIElementsModule.dll</PackagePath>
-      <Modified>2018-08-24T19:02:52.109</Modified>
+      <Modified>2018-09-10T14:42:52.715</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\UnityEngine.SharedInternalsModule.dll">
       <PackagePath>UnityEngine.SharedInternalsModule.dll</PackagePath>
-      <Modified>2018-08-24T19:02:52.119</Modified>
+      <Modified>2018-09-10T14:42:52.858</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\UnityEngine.ScreenCaptureModule.dll">
       <PackagePath>UnityEngine.ScreenCaptureModule.dll</PackagePath>
-      <Modified>2018-08-24T19:02:52.125</Modified>
+      <Modified>2018-09-10T14:42:52.996</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\UnityEngine.SpriteMaskModule.dll">
       <PackagePath>UnityEngine.SpriteMaskModule.dll</PackagePath>
-      <Modified>2018-08-24T19:02:52.133</Modified>
+      <Modified>2018-09-10T14:42:53.139</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\UnityEngine.StyleSheetsModule.dll">
       <PackagePath>UnityEngine.StyleSheetsModule.dll</PackagePath>
-      <Modified>2018-08-24T19:02:52.151</Modified>
+      <Modified>2018-09-10T14:42:53.293</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\UnityEngine.SpriteShapeModule.dll">
       <PackagePath>UnityEngine.SpriteShapeModule.dll</PackagePath>
-      <Modified>2018-08-24T19:02:52.158</Modified>
+      <Modified>2018-09-10T14:42:53.433</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\UnityEngine.VideoModule.dll">
       <PackagePath>UnityEngine.VideoModule.dll</PackagePath>
-      <Modified>2018-08-24T19:02:52.170</Modified>
+      <Modified>2018-09-10T14:42:53.584</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\UnityEngine.VehiclesModule.dll">
       <PackagePath>UnityEngine.VehiclesModule.dll</PackagePath>
-      <Modified>2018-08-24T19:02:52.177</Modified>
+      <Modified>2018-09-10T14:42:53.724</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\UnityEngine.UnityWebRequestWWWModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestWWWModule.dll</PackagePath>
-      <Modified>2018-08-24T19:02:52.185</Modified>
+      <Modified>2018-09-10T14:42:53.880</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\UnityEngine.VRModule.dll">
       <PackagePath>UnityEngine.VRModule.dll</PackagePath>
-      <Modified>2018-08-24T19:02:52.204</Modified>
+      <Modified>2018-09-10T14:42:54.068</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\UnityEngine.WindModule.dll">
       <PackagePath>UnityEngine.WindModule.dll</PackagePath>
-      <Modified>2018-08-24T19:02:52.214</Modified>
+      <Modified>2018-09-10T14:42:54.218</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\UnityEngine.WebModule.dll">
       <PackagePath>UnityEngine.WebModule.dll</PackagePath>
-      <Modified>2018-08-24T19:02:52.223</Modified>
+      <Modified>2018-09-10T14:42:54.365</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\UnityEngine.UnityAnalyticsModule.dll">
       <PackagePath>UnityEngine.UnityAnalyticsModule.dll</PackagePath>
-      <Modified>2018-08-24T19:02:52.232</Modified>
+      <Modified>2018-09-10T14:42:54.510</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\UnityEngine.UNETModule.dll">
       <PackagePath>UnityEngine.UNETModule.dll</PackagePath>
-      <Modified>2018-08-24T19:02:52.249</Modified>
+      <Modified>2018-09-10T14:42:54.662</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\UnityEngine.UIModule.dll">
       <PackagePath>UnityEngine.UIModule.dll</PackagePath>
-      <Modified>2018-08-24T19:02:52.260</Modified>
+      <Modified>2018-09-10T14:42:54.817</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\UnityEngine.UnityConnectModule.dll">
       <PackagePath>UnityEngine.UnityConnectModule.dll</PackagePath>
-      <Modified>2018-08-24T19:02:52.268</Modified>
+      <Modified>2018-09-10T14:42:54.960</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\UnityEngine.UnityWebRequestTextureModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestTextureModule.dll</PackagePath>
-      <Modified>2018-08-24T19:02:52.275</Modified>
+      <Modified>2018-09-10T14:42:55.102</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\UnityEngine.UnityWebRequestModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestModule.dll</PackagePath>
-      <Modified>2018-08-24T19:02:52.361</Modified>
+      <Modified>2018-09-10T14:42:55.246</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\UnityEngine.UnityWebRequestAudioModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestAudioModule.dll</PackagePath>
-      <Modified>2018-08-24T19:02:52.369</Modified>
+      <Modified>2018-09-10T14:42:55.411</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\UnityEngine.PhysicsModule.dll">
       <PackagePath>UnityEngine.PhysicsModule.dll</PackagePath>
-      <Modified>2018-08-24T19:02:52.390</Modified>
+      <Modified>2018-09-10T14:42:55.565</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\UnityEngine.AssetBundleModule.dll">
       <PackagePath>UnityEngine.AssetBundleModule.dll</PackagePath>
-      <Modified>2018-08-24T19:02:52.399</Modified>
+      <Modified>2018-09-10T14:42:55.711</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\UnityEngine.ARModule.dll">
       <PackagePath>UnityEngine.ARModule.dll</PackagePath>
-      <Modified>2018-08-24T19:02:52.411</Modified>
+      <Modified>2018-09-10T14:42:55.863</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\UnityEngine.AnimationModule.dll">
       <PackagePath>UnityEngine.AnimationModule.dll</PackagePath>
-      <Modified>2018-08-24T19:02:52.431</Modified>
+      <Modified>2018-09-10T14:42:56.022</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\UnityEngine.AudioModule.dll">
       <PackagePath>UnityEngine.AudioModule.dll</PackagePath>
-      <Modified>2018-08-24T19:02:52.446</Modified>
+      <Modified>2018-09-10T14:42:56.181</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\UnityEngine.CrashReportingModule.dll">
       <PackagePath>UnityEngine.CrashReportingModule.dll</PackagePath>
-      <Modified>2018-08-24T19:02:52.653</Modified>
+      <Modified>2018-09-10T14:42:56.322</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\UnityEngine.CoreModule.dll">
       <PackagePath>UnityEngine.CoreModule.dll</PackagePath>
-      <Modified>2018-08-24T19:02:53.031</Modified>
+      <Modified>2018-09-10T14:42:56.910</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\UnityEngine.ClothModule.dll">
       <PackagePath>UnityEngine.ClothModule.dll</PackagePath>
-      <Modified>2018-08-24T19:02:53.040</Modified>
+      <Modified>2018-09-10T14:42:57.060</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\UnityEngine.AIModule.dll">
       <PackagePath>UnityEngine.AIModule.dll</PackagePath>
-      <Modified>2018-08-24T19:02:53.062</Modified>
+      <Modified>2018-09-10T14:42:57.230</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\UnityEngine.AccessibilityModule.dll">
       <PackagePath>UnityEngine.AccessibilityModule.dll</PackagePath>
-      <Modified>2018-08-24T19:02:53.070</Modified>
+      <Modified>2018-09-10T14:42:57.386</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\UnityEngine.JSONSerializeModule.dll">
       <PackagePath>UnityEngine.JSONSerializeModule.dll</PackagePath>
-      <Modified>2018-08-24T19:02:53.077</Modified>
+      <Modified>2018-09-10T14:42:57.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\UnityEngine.InputModule.dll">
       <PackagePath>UnityEngine.InputModule.dll</PackagePath>
-      <Modified>2018-08-24T19:02:53.085</Modified>
+      <Modified>2018-09-10T14:42:57.678</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\UnityEngine.ParticlesLegacyModule.dll">
       <PackagePath>UnityEngine.ParticlesLegacyModule.dll</PackagePath>
-      <Modified>2018-08-24T19:02:53.095</Modified>
+      <Modified>2018-09-10T14:42:57.822</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\UnityEngine.Physics2DModule.dll">
       <PackagePath>UnityEngine.Physics2DModule.dll</PackagePath>
-      <Modified>2018-08-24T19:02:53.115</Modified>
+      <Modified>2018-09-10T14:42:57.980</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\UnityEngine.PerformanceReportingModule.dll">
       <PackagePath>UnityEngine.PerformanceReportingModule.dll</PackagePath>
-      <Modified>2018-08-24T19:02:53.122</Modified>
+      <Modified>2018-09-10T14:42:58.124</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\UnityEngine.ParticleSystemModule.dll">
       <PackagePath>UnityEngine.ParticleSystemModule.dll</PackagePath>
-      <Modified>2018-08-24T19:02:53.143</Modified>
+      <Modified>2018-09-10T14:42:58.265</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\UnityEngine.GameCenterModule.dll">
       <PackagePath>UnityEngine.GameCenterModule.dll</PackagePath>
-      <Modified>2018-08-24T19:02:53.151</Modified>
+      <Modified>2018-09-10T14:42:58.400</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\UnityEngine.dll">
       <PackagePath>UnityEngine.dll</PackagePath>
-      <Modified>2018-08-24T19:00:29.573</Modified>
+      <Modified>2018-09-10T14:30:56.140</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\UnityEngine.DirectorModule.dll">
       <PackagePath>UnityEngine.DirectorModule.dll</PackagePath>
-      <Modified>2018-08-24T19:02:53.158</Modified>
+      <Modified>2018-09-10T14:42:58.551</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\UnityEngine.GridModule.dll">
       <PackagePath>UnityEngine.GridModule.dll</PackagePath>
-      <Modified>2018-08-24T19:02:53.164</Modified>
+      <Modified>2018-09-10T14:42:58.702</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\UnityEngine.IMGUIModule.dll">
       <PackagePath>UnityEngine.IMGUIModule.dll</PackagePath>
-      <Modified>2018-08-24T19:02:53.186</Modified>
+      <Modified>2018-09-10T14:42:58.867</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\UnityEngine.ImageConversionModule.dll">
       <PackagePath>UnityEngine.ImageConversionModule.dll</PackagePath>
-      <Modified>2018-08-24T19:02:53.193</Modified>
+      <Modified>2018-09-10T14:42:59.017</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
-      <Modified>2018-08-24T19:02:53.263</Modified>
+      <Modified>2018-09-10T14:42:59.242</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\UnityEngine.Timeline.dll">
       <PackagePath>UnityEngine.Timeline.dll</PackagePath>
-      <Modified>2018-08-24T19:02:53.312</Modified>
+      <Modified>2018-09-10T14:42:59.432</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\nunit.framework.dll">
       <PackagePath>nunit.framework.dll</PackagePath>
-      <Modified>2018-08-24T19:02:53.366</Modified>
+      <Modified>2018-09-10T14:42:59.630</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\UnityEngine.UI.dll">
       <PackagePath>UnityEngine.UI.dll</PackagePath>
-      <Modified>2018-08-24T19:02:53.467</Modified>
+      <Modified>2018-09-10T14:42:59.878</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\UnityEngine.SpatialTracking.dll">
       <PackagePath>UnityEngine.SpatialTracking.dll</PackagePath>
-      <Modified>2018-08-24T19:02:53.477</Modified>
+      <Modified>2018-09-10T14:43:00.015</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\UnityEngine.Analytics.dll">
       <PackagePath>UnityEngine.Analytics.dll</PackagePath>
-      <Modified>2018-08-24T19:02:53.494</Modified>
+      <Modified>2018-09-10T14:43:00.167</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\UnityEngine.HoloLens.dll">
       <PackagePath>UnityEngine.HoloLens.dll</PackagePath>
-      <Modified>2018-08-24T19:02:53.513</Modified>
+      <Modified>2018-09-10T14:43:00.335</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\UnityEngine.StandardEvents.dll">
       <PackagePath>UnityEngine.StandardEvents.dll</PackagePath>
-      <Modified>2018-08-24T19:02:53.528</Modified>
+      <Modified>2018-09-10T14:43:00.491</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\UnityEngine.Networking.dll">
       <PackagePath>UnityEngine.Networking.dll</PackagePath>
-      <Modified>2018-08-24T19:02:53.605</Modified>
+      <Modified>2018-09-10T14:43:00.700</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\GLTFSerializationUWP.dll">
       <PackagePath>GLTFSerializationUWP.dll</PackagePath>
-      <Modified>2018-08-24T19:02:53.634</Modified>
+      <Modified>2018-09-10T14:43:00.876</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\Assembly-CSharp.dll">
       <PackagePath>Assembly-CSharp.dll</PackagePath>
-      <Modified>2018-08-24T19:02:52.029</Modified>
+      <Modified>2018-09-10T14:42:51.941</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alrowden\Documents\HolographicAcademy-Holograms-230-SpatialMapping\Starting\NewNav\App\NewNav\bin\x86\Release\Core\NewNav.exe">
       <PackagePath>NewNav.exe</PackagePath>
-      <Modified>2018-08-24T19:02:58.649</Modified>
+      <Modified>2018-09-10T14:43:06.226</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

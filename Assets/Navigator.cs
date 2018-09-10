@@ -48,6 +48,7 @@ public class Navigator
     private Queue<GameObject> drawnpath;
     public GameObject path_template = null;
     public float defaultWeight = 0;
+    private float last_dist = -1;
     public Navigator()
     {
 
@@ -97,7 +98,7 @@ public class Navigator
         nodes[25].adjacencies = makeDict(new Node[] { nodes[27], nodes[31] });
         nodes[26].adjacencies = makeDict(new Node[] { nodes[24], nodes[27] });
         nodes[27].adjacencies = makeDict(new Node[] { nodes[26], nodes[25] });
-        nodes[28].adjacencies = makeDict(new Node[] { nodes[9], nodes[29] });
+        nodes[28].adjacencies = makeDict(new Node[] { nodes[9], nodes[30] });
         nodes[29].adjacencies = makeDict(new Node[] { nodes[30], nodes[31] });
         nodes[30].adjacencies = makeDict(new Node[] { nodes[29], nodes[28] });
         nodes[31].adjacencies = makeDict(new Node[] { nodes[29], nodes[25] });
@@ -225,6 +226,74 @@ public class Navigator
 
     }
 
+    public Node[] A_Star(Node[] graph, int source, int dest)
+    {
+
+        Node last = graph[dest];
+        Dictionary<string, float> dist = new Dictionary<string, float>();
+
+        for (int i = 0; i < graph.Length; i++)
+        {
+            if (i == source)
+            {
+                dist[graph[i].obj.name] = 0;
+            }
+            else
+            {
+                dist[graph[i].obj.name] = float.MaxValue;
+            }
+        }
+
+        List<Node> Q = new List<Node>(graph);
+        List<Node> S = new List<Node>();
+        var Parent = new Dictionary<string, Node>();
+        Parent[graph[source].obj.name] = new Node(null);
+        Node V = graph[source];
+        while (Q.Count != 0)
+        {
+
+            float minDist = float.MaxValue;
+            foreach (var node in Q)
+            {
+                if (minDist > dist[node.obj.name])
+                {
+                    minDist = dist[node.obj.name];
+                    V = node;
+                }
+            }
+            S.Add(V);
+
+            foreach (KeyValuePair<Node, float> neighbor in V.adjacencies)
+            {
+                float added_weight = Vector3.Distance(neighbor.Key.obj.transform.position, last.obj.transform.position);
+                float alt = dist[V.obj.name] + neighbor.Value + added_weight;
+                
+
+                if (alt < dist[neighbor.Key.obj.name])
+                {
+                    dist[neighbor.Key.obj.name] = alt;
+                    Parent[neighbor.Key.obj.name] = V;
+                }
+            }
+            Q.Remove(V);
+        }
+
+        List<Node> ret = new List<Node>();
+        
+        int j = 0;
+
+
+        while (Parent[last.obj.name].obj != null)
+        {
+            j++;
+            ret.Add(((Node)last));
+            last = Parent[last.obj.name];
+        }
+        ret.Add(graph[source]);
+
+        return ret.ToArray();
+
+    }
 
     public void PrintDict(Dictionary<string, Node> dict)
     {
@@ -291,8 +360,18 @@ public class Navigator
                 Object.Destroy(junct);
             }
         }
-        Node[] path = Dijkstras(nodes, getClosestInt(Camera.main.transform.position), sphere);
+        Color color = Color.green;
+        Node[] path = A_Star(nodes, getClosestInt(Camera.main.transform.position), sphere);
         float weight = GetPathWeight(path);
+        if(last_dist != -1)
+        {
+            if(weight > last_dist)
+            {
+                color = Color.red;
+            }
+            
+        }
+        last_dist = weight;
         if(defaultWeight == 0)
         {
             defaultWeight = weight;
@@ -303,7 +382,7 @@ public class Navigator
             if (i < path.Length - 1)
             {
                 
-                GameObject juncture = NewJuncture(i, path[i].obj.transform.position, path[i + 1].obj.transform.position, weight);
+                GameObject juncture = NewJuncture(i, path[i].obj.transform.position, path[i + 1].obj.transform.position, weight, color);
 
                 drawnpath.Enqueue(juncture);
             }
@@ -335,8 +414,10 @@ public class Navigator
                 lastNode = obj;
             }
         }
+        //Debug.Log(path[0].obj.name);
         float dist1 = Vector3.Distance(path[1].obj.transform.position, targ.transform.position);
-        float dist2 = Vector2.Distance(path[1].obj.transform.position, path[0].obj.transform.position);
+        float dist2 = Vector3.Distance(path[1].obj.transform.position, path[0].obj.transform.position);
+        
         if (dist2 < dist1)
         {
             weight += Vector3.Distance(path[0].obj.transform.position, targ.transform.position);
@@ -358,14 +439,14 @@ public class Navigator
         ProcessCommand(closestToTargetInt);
     }
 
-    public GameObject NewJuncture(int name, Vector3 anchor1, Vector3 anchor2, float weight)
+    public GameObject NewJuncture(int name, Vector3 anchor1, Vector3 anchor2, float weight, Color color)
     {
         GameObject juncture = new GameObject("Juncture " + name.ToString());
         MeshFilter meshFilter = juncture.AddComponent<MeshFilter>();
         juncture.AddComponent<MeshRenderer>();
         meshFilter.sharedMesh = path_template.GetComponent<MeshFilter>().sharedMesh;
         Material mat = juncture.GetComponent<Renderer>().material;
-        mat.color = Color.blue;
+        mat.color = color;
         Vector3 newPos = new Vector3((anchor2.x + anchor1.x) / 2.0f, anchor1.y - 0.5f, (anchor2.z + anchor1.z) / 2.0f);
         juncture.transform.position = newPos;
 
